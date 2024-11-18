@@ -1,0 +1,16 @@
+[
+  {
+    "id": 1,
+    "category": "groceries",
+    "price": 150,
+    "paymentMethod": "cash",
+    "date": "2024-11-18T10:56:18.791Z"
+  },
+  {
+    "id": 2,
+    "category": "transportation",
+    "price": 50,
+    "paymentMethod": "Apple pay",
+    "date": "2024-11-18T13:15:32.396Z"
+  }
+]

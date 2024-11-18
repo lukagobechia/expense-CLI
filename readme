@@ -1,0 +1,34 @@
+Expense CLI using NodeJS
+
+Commands
+
+Create/Add: 
+    expense add [cattegory] [price] [payment method]
+
+Show/Read:
+    expense show 
+    expense show --asc
+    expense show --desc
+
+Delete:
+    expense delete [id]
+
+Update:
+    expense uppdate [id] --update-category [new category] --update-price [new price] --update-payment-method [new payment method]
+    expense uppdate [id] --update-category [new category]
+    expense uppdate [id] --update-price [new price] 
+    expense uppdate [id] --update-payment-method [new payment method]
+
+        or
+        
+    expense uppdate [id] -uc [new category] -up [new price] -upm [new payment method]
+    expense uppdate [id] -uc [new category]
+    expense uppdate [id] -up [new price]
+    expense uppdate [id] -upm [new payment method]
+
+Sort by price:
+    expense price --asc
+    expense price --desc
+
+Get by ID:
+    expense get [id]

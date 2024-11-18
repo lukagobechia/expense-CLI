@@ -1,0 +1,19 @@
+{
+  "dependencies": {
+    "commander": "^12.1.0"
+  },
+  "name": "expense-cli",
+  "description": "I am working on the project :)\r I will commit soon",
+  "version": "1.0.0",
+  "main": "app.js",
+  "type": "module",
+  "bin": {
+    "expense": "app.js"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
