@@ -1,4 +1,3 @@
-import { readFile } from "./readFile.js";
 
 const sortByDateAsc = (expenses) => {
   expenses.sort((a, b) => new Date(a.date) - new Date(b.date));

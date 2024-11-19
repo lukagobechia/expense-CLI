@@ -6,13 +6,21 @@ const read = async (options) => {
     const filePath = "expense.json";
     const expenses = await readFile(filePath);
     const { asc, desc } = options;
+
+    if (asc && desc) {
+      console.log("specify either ascending or descending order");
+      return;
+    }
+    let sortedExpenses;
+
     if (asc) {
-      console.log(sortByDateAsc(expenses));
+      sortedExpenses = sortByDateAsc(expenses);
+    } else if (desc) {
+      sortedExpenses = sortByDateDesc(expenses);
+    } else {
+      sortedExpenses = expenses; // unsorted
     }
-    if (desc) {
-      console.log(sortByDateDesc(expenses));
-    }
-    console.log(expenses);
+    console.log(sortedExpenses);
   } catch (e) {
     console.log("Error getting expanses: ", e.message);
   }

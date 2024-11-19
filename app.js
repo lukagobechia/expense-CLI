@@ -67,9 +67,9 @@ program
   .description("Sorts by prices")
   .option("--asc", "Sorts in ascending order")
   .option("--desc", "Sorts in descending order")
-  .action((options) => {
+  .action(async (options) => {
     try {
-      sortByPrice(options);
+      await sortByPrice(options);
     } catch (e) {
       console.log(e.message);
     }
@@ -79,9 +79,9 @@ program
   .command("get")
   .description("Gets expense by ID")
   .argument("<id>", "ID of expense")
-  .action((id) => {
+  .action(async (id) => {
     try {
-      getById(id);
+      await getById(id);
     } catch (e) {
       console.log(e.message);
     }

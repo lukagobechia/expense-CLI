@@ -12,5 +12,12 @@
     "price": 50,
     "paymentMethod": "Apple pay",
     "date": "2024-11-18T13:15:32.396Z"
+  },
+  {
+    "id": 3,
+    "category": "fff",
+    "price": 60,
+    "paymentMethod": "ggggg",
+    "date": "2024-11-18T20:33:37.013Z"
   }
 ]
